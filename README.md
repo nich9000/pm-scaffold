@@ -34,7 +34,7 @@ How multi-step work gets composed without falling apart. The architectural choic
 
 ### [04 — Evaluation](./04-evaluation/)
 How you know any of it is actually working. The unsexy but load-bearing rung that separates demoable from shippable.
-**Status:** Reference implementation in development.
+**Reference implementation:** [`pm-eval`](https://github.com/nich9000/pm-eval) — provider-agnostic eval harness (v0 skeleton with four reference rubrics; provider implementations in progress).
 
 ## The bet
 
@@ -50,15 +50,16 @@ If you're a PM working with AI right now, the fastest path through this repo is:
 2. Look at the reference implementations linked from that rung.
 3. Steal patterns. Build your own. Open an issue or PR if you want to push back on the framing.
 
-If you're hiring or partnering, this repo is the canonical home for [the framework](https://www.linkedin.com/in/nichansen) — the README of [`ears-spec-agent`](https://github.com/nich9000/ears-spec-agent) and [`prd-generator`](https://github.com/nich9000/prd-generator) both link back here.
+If you're hiring or partnering, this repo is the canonical home for [the framework](https://www.linkedin.com/in/nichansen) — the READMEs of [`ears-spec-agent`](https://github.com/nich9000/ears-spec-agent), [`prd-generator`](https://github.com/nich9000/prd-generator), and [`pm-eval`](https://github.com/nich9000/pm-eval) all link back here.
 
 ## Roadmap
 
 - [x] Framework named and defined publicly
 - [x] Specs rung — two reference implementations live (`ears-spec-agent`, `prd-generator`)
+- [x] Evaluation rung — reference implementation skeleton live ([`pm-eval`](https://github.com/nich9000/pm-eval))
+- [ ] Evaluation rung v0.1 — provider implementations and response parsing
 - [ ] Memory rung — reference implementation
-- [ ] Evaluation rung — reference implementation
-- [ ] Orchestration rung — standalone reference implementation
+- [ ] Orchestration rung — standalone reference implementation (extracted from `prd-generator`)
 - [ ] Long-form post deep-diving each rung (one per quarter)
 - [ ] Conference talk submission
 
